@@ -1,0 +1,35 @@
+{
+  "name": "pulse",
+  "private": true,
+  "packageManager": "npm@10.9.9",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "start": "npm run start -w @pulse/web",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "test:e2e": "npm run test:e2e -w @pulse/web",
+    "db:migrate": "tsx packages/db/src/cli/migrate.ts",
+    "db:seed": "tsx packages/db/src/cli/seed.ts",
+    "db:setup": "npm run db:migrate && npm run db:seed",
+    "simulate": "tsx packages/db/src/cli/simulate.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "tsx": "^4.20.6",
+    "turbo": "^2.6.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vitest": "^5.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
