@@ -12,3 +12,6 @@ blob-report
 coverage
 .DS_Store
 *.tsbuildinfo
+
+# Copied from packages/db/migrations by the static demo build
+apps/web/public/demo-schema.sql

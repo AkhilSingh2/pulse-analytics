@@ -6,6 +6,8 @@ Product analytics for people who ship. Track events, watch them land, and answer
 
 Pulse is a small, typed analytics platform built as a portfolio project by [Akhilendra Singh](https://github.com/AkhilSingh2). It tracks a fictional product, Northstar, with synthetic traffic. Nothing here calls a paid API.
 
+**Live demo:** [akhilsingh2.github.io/pulse-analytics](https://akhilsingh2.github.io/pulse-analytics/). The hosted copy runs in demo mode with sample data: the real migration and query code run against an in-browser Postgres (PGlite) seeded with the same synthetic traffic, and a small simulator keeps the live stream moving. Build it with `STATIC_DEMO=true` (see `apps/web/src/demo`).
+
 ## What you can do
 
 - Drop in `@pulse/sdk` and send `page`, `track`, and `identify` from the browser or Node. Events batch, retry, and carry a stable anonymous id plus a 30-minute session.

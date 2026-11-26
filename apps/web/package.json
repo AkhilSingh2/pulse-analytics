@@ -12,6 +12,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@electric-sql/pglite": "^0.6.0",
     "@pulse/db": "*",
     "@pulse/sdk": "*",
     "@pulse/shared": "*",

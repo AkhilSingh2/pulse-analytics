@@ -4,7 +4,13 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./queries": "./src/queries.ts",
+    "./generate": "./src/generate.ts",
+    "./insert": "./src/insert.ts",
+    "./rollups": "./src/rollups.ts",
+    "./ingest": "./src/ingest.ts"
   },
   "scripts": {
     "lint": "eslint src",
